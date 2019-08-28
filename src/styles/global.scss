@@ -5,7 +5,7 @@ html,
 body {
   margin: 0;
   font-size: $fsMedium;
-  background: $dark;
+  background: $light;
 }
 
 html,
@@ -16,9 +16,14 @@ input,
 select,
 button,
 span {
-  font-family: antarctican-mono, sans-serif;
+  // font-family: antarctican-mono, sans-serif;
+  // font-family: adonis-web, serif;
+  // font-family: base-12-serif, serif;
+  // font-family: museo, serif;
+  // font-family: mr-eaves-modern, sans-serif;
+  font-family: ff-tisa-sans-web-pro, sans-serif;
   font-weight: 400;
-  color: $light;
+  color: $dark;
 }
 
 .main-col {

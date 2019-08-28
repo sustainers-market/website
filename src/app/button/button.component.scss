@@ -2,17 +2,18 @@
 @import '../../styles/colors';
 
 .button {
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 10px 15px;
   display: inline-block;
   text-align: center;
   min-width: 80px;
-  background: $brandDark;
+  background: $brandLight;
   cursor: pointer;
 
   .text {
     color: $brandPrimary;
-    font-size: $fsMedium;
+    font-size: $fsLarge;
+    font-weight: 500;
   }
 
   &:hover {

@@ -5,3 +5,7 @@
   mask-size: contain;
   background: red;
 }
+
+@mixin headline {
+  font-family: museo, serif;
+}
