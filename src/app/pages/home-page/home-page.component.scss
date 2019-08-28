@@ -35,23 +35,23 @@
   }
 }
 
-// .steps {
-//   .step {
-//     display: flex;
-//     align-items: center;
-//     margin-bottom: 60px;
+.steps {
+  .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
 
-//     .number {
-//       margin-right: 60px;
-//       font-size: $fsXLarge;
-//       color: $brandPrimary;
-//     }
+    .number {
+      margin-right: 60px;
+      font-size: $fsXLarge;
+      color: $brandPrimary;
+    }
 
-//     .content {
-//       flex: 1;
-//     }
-//   }
-// }
+    .content {
+      flex: 1;
+    }
+  }
+}
 
 // .split-col {
 //   display: flex;
