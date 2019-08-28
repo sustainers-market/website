@@ -1,0 +1,7 @@
+@mixin svgMask($filename) {
+  mask-image: url('/assets/#{$filename}.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background: red;
+}
