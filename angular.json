@@ -17,14 +17,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SustainerNetwork",
+            "outputPath": "gcp/dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app.yaml",
+              {
+                "input": "src/",
+                "glob": "app.yaml",
+                "output": "./../"
+              }
             ],
             "styles": [
               "src/styles/global.scss"
