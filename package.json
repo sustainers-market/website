@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy-gcp": "ng build --prod && gcloud app deploy gcp",
+    "deploy-gcp": "ng build --prod && gcloud app deploy gcp --verbosity=debug",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

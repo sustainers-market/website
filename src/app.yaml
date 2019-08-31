@@ -2,8 +2,9 @@ runtime: python27
 api_version: 1
 threadsafe: true
 handlers:
-- url: /
-  static_files: dist/index.html
-  upload: dist/index.html
-- url: /
-  static_dir: dist
+  - url: /(.*\.(js|css|png|ico|txt))$
+    static_files: dist/\1
+    upload: dist/.*\.(js|css|png|ico|txt)$
+  - url: .*
+    static_files: dist/index.html
+    upload: dist/index.html
