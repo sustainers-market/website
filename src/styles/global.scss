@@ -22,12 +22,29 @@ span {
   // font-family: museo, serif;
   // font-family: mr-eaves-modern, sans-serif;
   font-family: ff-tisa-sans-web-pro, sans-serif;
+  // font-family: ff-ernestine-pro, serif;
+  // font-family: bureau-grot-wide, sans-serif;
+  // font-family: bureau-grot, sans-serif;
+  // font-family: forma-djr-text, sans-serif;
+  // font-family: los-feliz, serif;
+  // font-family: mr-eaves-xl-sans, sans-serif;
+  // font-family: mr-eaves-sans, sans-serif;
+  // font-family: fairplex-wide, serif;
+  // font-family: serenity, sans-serif;
+  // font-family: tenso, sans-serif;
   font-weight: 400;
   color: $dark;
 }
 
+$main-col-width: 800px;
+
 .main-col {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: $main-col-width;
   text-align: left;
+  padding: 20px 0;
+
+  @media (max-width: $main-col-width) {
+    padding: 20px;
+  }
 }
