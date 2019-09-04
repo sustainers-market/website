@@ -6,7 +6,7 @@
       "args": ["-c", "npm install"]
     },
     {
-      "name": "gcr.io/cloud-builders/gcloud",
+      "name": "gcr.io/cloud-builders/ng",
       "entrypoint": "bash",
       "args": ["-c", "ng build --prod"]
     },
