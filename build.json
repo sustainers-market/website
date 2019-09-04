@@ -6,14 +6,14 @@
       "args": ["-c", "npm install"]
     },
     {
-      "name": "gcr.io/cloud-builders/ng",
+      "name": "gcr.io/cloud-builders/npm",
       "entrypoint": "bash",
-      "args": ["-c", "ng build --prod"]
+      "args": ["-c", "npm run build --prod"]
     },
     {
       "name": "gcr.io/cloud-builders/gcloud",
       "entrypoint": "bash",
-      "args": ["-c", "gcloud app deploy gcp --verbosity=debug"]
+      "args": ["-c", "gcloud app deploy gcp"]
     }
   ]
 }
