@@ -13,7 +13,7 @@
     {
       "name": "gcr.io/cloud-builders/gcloud",
       "entrypoint": "bash",
-      "args": ["-c", "gcloud app deploy gcp"]
+      "args": ["-c", "gcloud app deploy gcp --project=sustainers-market-website"]
     }
   ]
 }
