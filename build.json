@@ -1,0 +1,19 @@
+{
+  "steps": [
+    {
+      "name": "gcr.io/cloud-builders/npm",
+      "entrypoint": "bash",
+      "args": ["-c", "npm install"]
+    },
+    {
+      "name": "node:10.16.0",
+      "entrypoint": "bash",
+      "args": ["npx ng build --prod"]
+    },
+    {
+      "name": "gcr.io/cloud-builders/gcloud",
+      "entrypoint": "bash",
+      "args": ["-c", "gcloud app deploy gcp --verbosity=debug"]
+    }
+  ]
+}
