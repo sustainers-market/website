@@ -6,9 +6,9 @@
       "args": ["-c", "npm install"]
     },
     {
-      "name": "node:10.16.0",
+      "name": "gcr.io/cloud-builders/gcloud",
       "entrypoint": "bash",
-      "args": ["npx ng build --prod"]
+      "args": ["-c", "ng build --prod"]
     },
     {
       "name": "gcr.io/cloud-builders/gcloud",
