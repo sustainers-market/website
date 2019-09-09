@@ -1,10 +1,12 @@
 @import 'font-size';
 @import 'colors';
+@import 'screen-sizes';
+@import 'animations';
 
 html,
 body {
   margin: 0;
-  font-size: $fsMedium;
+  font-size: $fsSmall;
   background: $light;
 }
 
@@ -20,8 +22,9 @@ span {
   // font-family: adonis-web, serif;
   // font-family: base-12-serif, serif;
   // font-family: museo, serif;
+  // font-family: museo-sans, serif;
   // font-family: mr-eaves-modern, sans-serif;
-  font-family: ff-tisa-sans-web-pro, sans-serif;
+  // font-family: ff-tisa-sans-web-pro, sans-serif;
   // font-family: ff-ernestine-pro, serif;
   // font-family: bureau-grot-wide, sans-serif;
   // font-family: bureau-grot, sans-serif;
@@ -32,6 +35,8 @@ span {
   // font-family: fairplex-wide, serif;
   // font-family: serenity, sans-serif;
   // font-family: tenso, sans-serif;
+  // font-family: canada-type-gibson, sans-serif;
+  font-family: benton-sans, sans-serif;
   font-weight: 400;
   color: $dark;
 }
@@ -41,10 +46,35 @@ $main-col-width: 800px;
 .main-col {
   margin: 0 auto;
   max-width: $main-col-width;
-  text-align: left;
-  padding: 20px 0;
 
   @media (max-width: $main-col-width) {
-    padding: 20px;
+    padding: 0 20px;
+  }
+}
+
+h1 {
+  font-size: $fsXLarge;
+  font-weight: 700;
+  line-height: 1;
+
+  @include for-phone-only {
+    font-size: $fsLarge;
+  }
+}
+
+p {
+  color: $grey;
+}
+
+a {
+  cursor: pointer;
+  color: $dark;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid $brandSecondary;
+  margin-bottom: -2px; 
+
+  &:hover {
+    border-color: $brandPrimary;
   }
 }
