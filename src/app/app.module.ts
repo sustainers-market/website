@@ -4,10 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { ButtonComponent } from './button/button.component';
+import { ButtonComponent } from './shared/button/button.component';
 import { LoginComponent } from './login/login.component';
 
-@NgModule({
+@NgModule( {
   declarations: [
     AppComponent,
     HomePageComponent,
@@ -19,6 +19,6 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
-})
+  bootstrap: [ AppComponent ]
+} )
 export class AppModule { }
